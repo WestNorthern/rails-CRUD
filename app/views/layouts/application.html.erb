@@ -10,8 +10,10 @@
 
   <body>
   	<%= link_to "Users Index", users_path %>
-  	<%= link_to "Users New", new_user_path %>
-  	<%= link_to "Users New", user_path(User.first) %>
+  	<%= link_to "New User", new_user_path %>
+
+    <%= link_to "Posts Index", posts_path %>
+    
     <%= yield %>
   </body>
 </html>
