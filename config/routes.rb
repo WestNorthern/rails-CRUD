@@ -1,8 +1,11 @@
 Rails.application.routes.draw do
 
+
   get '/ryan' => 'home#ryan'
 
   resources :users
+  resources :sessions, except: [:destroy]
+  delete '/sessions' => 'sessions#destroy', as: :logout
 
   resources :posts
 

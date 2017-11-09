@@ -1,3 +1,12 @@
+
+    sessions GET    /sessions(.:format)          sessions#index
+             POST   /sessions(.:format)          sessions#create
+ new_session GET    /sessions/new(.:format)      sessions#new
+edit_session GET    /sessions/:id/edit(.:format) sessions#edit
+     session GET    /sessions/:id(.:format)      sessions#show
+             PATCH  /sessions/:id(.:format)      sessions#update
+             PUT    /sessions/:id(.:format)      sessions#update
+      logout DELETE /sessions(.:format)          sessions#destroy
    Prefix Verb   URI Pattern               Controller#Action
      ryan GET    /ryan(.:format)           home#ryan
     users GET    /users(.:format)          users#index
@@ -16,3 +25,4 @@ edit_post GET    /posts/:id/edit(.:format) posts#edit
           PATCH  /posts/:id(.:format)      posts#update
           PUT    /posts/:id(.:format)      posts#update
           DELETE /posts/:id(.:format)      posts#destroy
+
